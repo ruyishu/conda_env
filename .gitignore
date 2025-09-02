@@ -1,0 +1,47 @@
+# 模型文件
+Qwen2.5-0.5B-Instruct/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# 日志文件
+logs/
+*.log
+*.out
+events.out.tfevents.*
+
+# 数据文件
+*.parquet
+*.json
+
+# 临时文件
+._____temp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Conda环境
+miniconda.sh
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 训练输出
+saves/
+models/
+checkpoints/
+
+# 其他
+*.tmp
+*.bak
+*.orig
