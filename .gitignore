@@ -41,6 +41,9 @@ saves/
 models/
 checkpoints/
 
+# Submodules and external repos
+code/llamafactorysft/LLaMA-Factory/
+
 # 其他
 *.tmp
 *.bak

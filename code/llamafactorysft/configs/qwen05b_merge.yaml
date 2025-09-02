@@ -1,0 +1,28 @@
+# =============================================================================
+# Qwen2.5-0.5B LoRA权重合并配置文件
+# =============================================================================
+# 此配置文件用于将训练好的LoRA适配器权重与基础模型合并，
+# 生成可直接部署的完整模型。
+
+# 基础模型路径
+model_name_or_path: /zk/Qwen2.5-0.5B-Instruct
+
+# LoRA适配器路径（训练输出目录）
+adapter_name_or_path: /zk/code/llamafactorysft/saves/qwen05b_lora_sft
+
+# 模型模板
+template: qwen
+
+# 微调类型
+finetuning_type: lora
+
+# 合并后模型输出路径
+export_dir: /zk/code/llamafactorysft/models/qwen05b_gsm8k_merged
+
+# 导出设置
+export_size: 2  # 分片大小（GB）
+export_device: cpu  # 导出设备
+export_legacy_format: false  # 是否使用旧格式
+
+# 其他设置
+trust_remote_code: true
